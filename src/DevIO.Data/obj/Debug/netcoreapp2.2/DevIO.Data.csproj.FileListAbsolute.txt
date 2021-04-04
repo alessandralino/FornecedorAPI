@@ -1,0 +1,24 @@
+C:\Users\aleli\Downloads\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-02 - API Completa\src\DevIO.Data\bin\Debug\netcoreapp2.2\DevIO.Data.deps.json
+C:\Users\aleli\Downloads\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-02 - API Completa\src\DevIO.Data\bin\Debug\netcoreapp2.2\DevIO.Data.dll
+C:\Users\aleli\Downloads\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-02 - API Completa\src\DevIO.Data\bin\Debug\netcoreapp2.2\DevIO.Data.pdb
+C:\Users\aleli\Downloads\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-02 - API Completa\src\DevIO.Data\bin\Debug\netcoreapp2.2\DevIO.Business.dll
+C:\Users\aleli\Downloads\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-02 - API Completa\src\DevIO.Data\bin\Debug\netcoreapp2.2\DevIO.Business.pdb
+C:\Users\aleli\Downloads\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-02 - API Completa\src\DevIO.Data\obj\Debug\netcoreapp2.2\DevIO.Data.csprojAssemblyReference.cache
+C:\Users\aleli\Downloads\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-02 - API Completa\src\DevIO.Data\obj\Debug\netcoreapp2.2\DevIO.Data.AssemblyInfoInputs.cache
+C:\Users\aleli\Downloads\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-02 - API Completa\src\DevIO.Data\obj\Debug\netcoreapp2.2\DevIO.Data.AssemblyInfo.cs
+C:\Users\aleli\Downloads\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-02 - API Completa\src\DevIO.Data\obj\Debug\netcoreapp2.2\DevIO.Data.csproj.CoreCompileInputs.cache
+C:\Users\aleli\Downloads\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-02 - API Completa\src\DevIO.Data\obj\Debug\netcoreapp2.2\DevIO.Data.csproj.CopyComplete
+C:\Users\aleli\Downloads\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-02 - API Completa\src\DevIO.Data\obj\Debug\netcoreapp2.2\DevIO.Data.dll
+C:\Users\aleli\Downloads\DB2C2636-0FAD-4369-A195-0E759C2E5FD3-02 - API Completa\src\DevIO.Data\obj\Debug\netcoreapp2.2\DevIO.Data.pdb
+C:\Users\aleli\source\repos\APICompleta\src\DevIO.Data\bin\Debug\netcoreapp2.2\DevIO.Data.deps.json
+C:\Users\aleli\source\repos\APICompleta\src\DevIO.Data\bin\Debug\netcoreapp2.2\DevIO.Data.dll
+C:\Users\aleli\source\repos\APICompleta\src\DevIO.Data\bin\Debug\netcoreapp2.2\DevIO.Data.pdb
+C:\Users\aleli\source\repos\APICompleta\src\DevIO.Data\bin\Debug\netcoreapp2.2\DevIO.Business.dll
+C:\Users\aleli\source\repos\APICompleta\src\DevIO.Data\bin\Debug\netcoreapp2.2\DevIO.Business.pdb
+C:\Users\aleli\source\repos\APICompleta\src\DevIO.Data\obj\Debug\netcoreapp2.2\DevIO.Data.csprojAssemblyReference.cache
+C:\Users\aleli\source\repos\APICompleta\src\DevIO.Data\obj\Debug\netcoreapp2.2\DevIO.Data.AssemblyInfoInputs.cache
+C:\Users\aleli\source\repos\APICompleta\src\DevIO.Data\obj\Debug\netcoreapp2.2\DevIO.Data.AssemblyInfo.cs
+C:\Users\aleli\source\repos\APICompleta\src\DevIO.Data\obj\Debug\netcoreapp2.2\DevIO.Data.csproj.CoreCompileInputs.cache
+C:\Users\aleli\source\repos\APICompleta\src\DevIO.Data\obj\Debug\netcoreapp2.2\DevIO.Data.csproj.CopyComplete
+C:\Users\aleli\source\repos\APICompleta\src\DevIO.Data\obj\Debug\netcoreapp2.2\DevIO.Data.dll
+C:\Users\aleli\source\repos\APICompleta\src\DevIO.Data\obj\Debug\netcoreapp2.2\DevIO.Data.pdb
