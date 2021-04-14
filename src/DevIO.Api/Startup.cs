@@ -37,6 +37,12 @@ namespace DevIO.Api
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+            services.Configure<ApiBehaviorOptions>(options =>
+            {
+                //estou suprimindo pq quero persoanlizar os erros retornados ao Cliente
+                options.SuppressModelStateInvalidFilter = true; 
+            });
+
             services.ResolveDependencies();
         }
 

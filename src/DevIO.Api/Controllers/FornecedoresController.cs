@@ -15,14 +15,18 @@ namespace DevIO.Api.Controllers
     {
         private readonly IFornecedorRepository _fornecedorRepository;
         private readonly IFornecedorService _fornecedorService;
+        private readonly IEnderecoRepository _enderecoRepository;
         private readonly IMapper _mapper;
 
         public FornecedoresController(IFornecedorRepository fornecedorRepository,
                                       IFornecedorService fornecedorService,
-                                      IMapper mapper)
+                                      IMapper mapper,
+                                      IEnderecoRepository enderecoRepository,
+                                      INotificador notificador) : base (notificador)
         {
             _fornecedorRepository = fornecedorRepository;
             _fornecedorService = fornecedorService;
+            _enderecoRepository = enderecoRepository;
             _mapper = mapper;
                
         }
@@ -43,47 +47,68 @@ namespace DevIO.Api.Controllers
             return fornecedor;
         }
 
-        [HttpPost]
-        public async Task<ActionResult<FornecedorViewModel>> Adicionar(FornecedorViewModel fornecedorViewModel) {
-            if (!ModelState.IsValid) return BadRequest();
+        [HttpGet("obter-endereco/{id:guid}")]
+        public async Task<EnderecoViewModel> ObterEnderecoPorID(Guid id)
+        {
+            return _mapper.Map<EnderecoViewModel>(await _enderecoRepository.ObterPorId(id));
 
-            var fornecedor = _mapper.Map<Fornecedor>(fornecedorViewModel);
-            var result = await _fornecedorService.Adicionar(fornecedor);
-
-            if (!result) return BadRequest();
-
-            return Ok(fornecedor);
         }
+
+        [HttpPut("atualizar-endereco/{id:guid}")]
+        /* A partir do ASP NET 2.1 não é necessário informar se o id vem da rota. */
+        public async Task<ActionResult<EnderecoViewModel>> AtualizarEndereco(Guid id, EnderecoViewModel enderecoViewModel)
+        {
+            if (id != enderecoViewModel.Id)
+            {
+                notificarErro("O ID informado é diferente do existente na requisição.");
+                return customResponse(enderecoViewModel);
+            }
+
+            if (!ModelState.IsValid) return customResponse(ModelState);
+
+            await _fornecedorService.AtualizarEndereco(_mapper.Map<Endereco>(enderecoViewModel));
+
+            return customResponse(enderecoViewModel);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<FornecedorViewModel>> Adicionar(FornecedorViewModel fornecedorViewModel) 
+        {
+            if (!ModelState.IsValid) return customResponse(ModelState);
+
+            await _fornecedorService.Adicionar(_mapper.Map<Fornecedor>(fornecedorViewModel));
+
+            return customResponse(fornecedorViewModel);
+         }
+
 
         [HttpPut("{id:guid}")]
         /* A partir do ASP NET 2.1 não é necessário informar se o id vem da rota. */
         public async Task<ActionResult<FornecedorViewModel>> Atualizar(Guid id, FornecedorViewModel fornecedorViewModel)
         {
-            if(id != fornecedorViewModel.Id) return BadRequest();
+            if(id != fornecedorViewModel.Id)
+            {
+                notificarErro("O ID informado é diferente do existente na requisição.");
+                return customResponse(fornecedorViewModel);
+            }
 
+            if (!ModelState.IsValid) return customResponse(ModelState);
 
-            if (!ModelState.IsValid) return BadRequest();
+            await _fornecedorService.Atualizar(_mapper.Map<Fornecedor>(fornecedorViewModel));
 
-            var fornecedor = _mapper.Map<Fornecedor>(fornecedorViewModel);
-            var result = await _fornecedorService.Atualizar(fornecedor);
-
-            if (!result) return BadRequest();
-
-            return Ok(fornecedor);
+            return customResponse(fornecedorViewModel);
         }
 
-        [HttpDelete("{id:guid}")]
+        [HttpDelete("{id:guid}")]       
         public async Task<ActionResult<FornecedorViewModel>> Excluir(Guid id)
         {
-            var fornecedor = await _fornecedorRepository.ObterFornecedorEndereco(id);
-            if (fornecedor == null) return NotFound();
+            var fornecedorViewModel = await _fornecedorRepository.ObterFornecedorEndereco(id);
 
-            var result = await _fornecedorService.Remover(id);
+            if (fornecedorViewModel == null) return NotFound();
 
-            if (!result) return BadRequest();
-
-            return Ok(fornecedor);
-
+            await _fornecedorService.Remover(id);
+            
+            return customResponse(fornecedorViewModel);
         }
 
 
