@@ -30,6 +30,7 @@ namespace DevIO.Api.Controllers
             _mapper = mapper;
                
         }
+        
         [HttpGet]
         public async Task<IEnumerable<FornecedorViewModel>> ObterTodos()
         {
