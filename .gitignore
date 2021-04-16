@@ -3,6 +3,9 @@
 *.vsp
 *.vspx
 *.config
+*.suo
+*.user
+*.sln.docstates
 
 # Visual Studio Code
 .vscode/
