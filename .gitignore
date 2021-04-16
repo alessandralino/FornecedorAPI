@@ -1,0 +1,17 @@
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+*.config
+
+# Visual Studio Code
+.vscode/
+
+# Output folder used by Webpack or other FE stuff
+**/.vs/*
+
+
+# SpecFlow specific
+*.feature.cs
+*.feature.xlsx.*
+*.Specs_*.html
