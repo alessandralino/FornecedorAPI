@@ -10,3 +10,15 @@ C:\Users\aleli\source\repos\APICompleta\src\DevIO.Data\obj\Debug\netcoreapp2.1\D
 C:\Users\aleli\source\repos\APICompleta\src\DevIO.Data\obj\Debug\netcoreapp2.1\DevIO.Data.csproj.CopyComplete
 C:\Users\aleli\source\repos\APICompleta\src\DevIO.Data\obj\Debug\netcoreapp2.1\DevIO.Data.dll
 C:\Users\aleli\source\repos\APICompleta\src\DevIO.Data\obj\Debug\netcoreapp2.1\DevIO.Data.pdb
+C:\Users\aleli\Source\Repos\FornecedorAPI\src\DevIO.Data\bin\Debug\netcoreapp2.1\DevIO.Data.deps.json
+C:\Users\aleli\Source\Repos\FornecedorAPI\src\DevIO.Data\bin\Debug\netcoreapp2.1\DevIO.Data.dll
+C:\Users\aleli\Source\Repos\FornecedorAPI\src\DevIO.Data\bin\Debug\netcoreapp2.1\DevIO.Data.pdb
+C:\Users\aleli\Source\Repos\FornecedorAPI\src\DevIO.Data\bin\Debug\netcoreapp2.1\DevIO.Business.dll
+C:\Users\aleli\Source\Repos\FornecedorAPI\src\DevIO.Data\bin\Debug\netcoreapp2.1\DevIO.Business.pdb
+C:\Users\aleli\Source\Repos\FornecedorAPI\src\DevIO.Data\obj\Debug\netcoreapp2.1\DevIO.Data.csprojAssemblyReference.cache
+C:\Users\aleli\Source\Repos\FornecedorAPI\src\DevIO.Data\obj\Debug\netcoreapp2.1\DevIO.Data.AssemblyInfoInputs.cache
+C:\Users\aleli\Source\Repos\FornecedorAPI\src\DevIO.Data\obj\Debug\netcoreapp2.1\DevIO.Data.AssemblyInfo.cs
+C:\Users\aleli\Source\Repos\FornecedorAPI\src\DevIO.Data\obj\Debug\netcoreapp2.1\DevIO.Data.csproj.CoreCompileInputs.cache
+C:\Users\aleli\Source\Repos\FornecedorAPI\src\DevIO.Data\obj\Debug\netcoreapp2.1\DevIO.Data.csproj.CopyComplete
+C:\Users\aleli\Source\Repos\FornecedorAPI\src\DevIO.Data\obj\Debug\netcoreapp2.1\DevIO.Data.dll
+C:\Users\aleli\Source\Repos\FornecedorAPI\src\DevIO.Data\obj\Debug\netcoreapp2.1\DevIO.Data.pdb
