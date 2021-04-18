@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NktpJneeECk5/qqKGNqdMnl2vg/XWlTe2THWFPso6j35JlEBFJ1o6vWdnII4KUOwTIwpcsyLhNfdeC8UZ6M0bw==",
+  "dgSpecHash": "DV9BcuwvawN41Q1jRDUlv2IXE685G6qXUZ9h51TYcl3yHvXtBk6QfTdZRGSfffEpCdJJOoHmAVxPn55crpnu6w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aleli\\source\\repos\\APICompleta\\src\\DevIO.Data\\DevIO.Data.csproj",
+  "projectFilePath": "C:\\Users\\aleli\\Source\\Repos\\FornecedorAPI\\src\\DevIO.Data\\DevIO.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aleli\\.nuget\\packages\\fluentvalidation\\8.3.0\\fluentvalidation.8.3.0.nupkg.sha512",
     "C:\\Users\\aleli\\.nuget\\packages\\microsoft.entityframeworkcore\\2.2.4\\microsoft.entityframeworkcore.2.2.4.nupkg.sha512",

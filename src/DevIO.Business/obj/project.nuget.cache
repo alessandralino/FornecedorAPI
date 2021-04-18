@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BLK8OADNlspG3+oXPvr5gYR3CbNuB5V7fgEYQ5TxcA8TJz1VMjWmLN0QHK1xoE1IKyN9dhlIS7Nfs6eA/CIeTg==",
+  "dgSpecHash": "+AMlzcunHxBE6H4zO63RgbA8derjXOQI8BCNIDSddBOWBplrPKBZuOyYnZExriHbKJ+2rMIh3HUNYJhazihzSg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aleli\\source\\repos\\APICompleta\\src\\DevIO.Business\\DevIO.Business.csproj",
+  "projectFilePath": "C:\\Users\\aleli\\Source\\Repos\\FornecedorAPI\\src\\DevIO.Business\\DevIO.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aleli\\.nuget\\packages\\fluentvalidation\\8.3.0\\fluentvalidation.8.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.app\\2.1.0\\microsoft.netcore.app.2.1.0.nupkg.sha512",

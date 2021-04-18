@@ -3526,11 +3526,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aleli\\source\\repos\\APICompleta\\src\\DevIO.Data\\DevIO.Data.csproj",
+      "projectUniqueName": "C:\\Users\\aleli\\Source\\Repos\\FornecedorAPI\\src\\DevIO.Data\\DevIO.Data.csproj",
       "projectName": "DevIO.Data",
-      "projectPath": "C:\\Users\\aleli\\source\\repos\\APICompleta\\src\\DevIO.Data\\DevIO.Data.csproj",
+      "projectPath": "C:\\Users\\aleli\\Source\\Repos\\FornecedorAPI\\src\\DevIO.Data\\DevIO.Data.csproj",
       "packagesPath": "C:\\Users\\aleli\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aleli\\source\\repos\\APICompleta\\src\\DevIO.Data\\obj\\",
+      "outputPath": "C:\\Users\\aleli\\Source\\Repos\\FornecedorAPI\\src\\DevIO.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3550,8 +3550,8 @@
         "netcoreapp2.1": {
           "targetAlias": "netcoreapp2.1",
           "projectReferences": {
-            "C:\\Users\\aleli\\source\\repos\\APICompleta\\src\\DevIO.Business\\DevIO.Business.csproj": {
-              "projectPath": "C:\\Users\\aleli\\source\\repos\\APICompleta\\src\\DevIO.Business\\DevIO.Business.csproj"
+            "C:\\Users\\aleli\\Source\\Repos\\FornecedorAPI\\src\\DevIO.Business\\DevIO.Business.csproj": {
+              "projectPath": "C:\\Users\\aleli\\Source\\Repos\\FornecedorAPI\\src\\DevIO.Business\\DevIO.Business.csproj"
             }
           }
         }

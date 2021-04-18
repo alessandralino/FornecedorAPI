@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dTCb1ZxgBAvNWH+QJrdb93eIYXBWeCdsevxotZUge0cEmuzFfv5Pl1TCtS6yhIeJ8K1WVjYUcwsFM+yH156wLg==",
+  "dgSpecHash": "dfjwHE5aFeZmwDp2VekX95mFiYy6eRSrExnr6oUM4kShj3IbBLGlagb7V1BOhgYHRqSHIt3c1XQU6+1wkgYqUQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\aleli\\source\\repos\\APICompleta\\src\\DevIO.Api\\DevIO.Api.csproj",
+  "projectFilePath": "C:\\Users\\aleli\\Source\\Repos\\FornecedorAPI\\src\\DevIO.Api\\DevIO.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aleli\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\aleli\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

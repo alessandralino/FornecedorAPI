@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aleli\\source\\repos\\APICompleta\\src\\DevIO.Business\\DevIO.Business.csproj": {}
+    "C:\\Users\\aleli\\Source\\Repos\\FornecedorAPI\\src\\DevIO.Business\\DevIO.Business.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aleli\\source\\repos\\APICompleta\\src\\DevIO.Business\\DevIO.Business.csproj": {
+    "C:\\Users\\aleli\\Source\\Repos\\FornecedorAPI\\src\\DevIO.Business\\DevIO.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aleli\\source\\repos\\APICompleta\\src\\DevIO.Business\\DevIO.Business.csproj",
+        "projectUniqueName": "C:\\Users\\aleli\\Source\\Repos\\FornecedorAPI\\src\\DevIO.Business\\DevIO.Business.csproj",
         "projectName": "DevIO.Business",
-        "projectPath": "C:\\Users\\aleli\\source\\repos\\APICompleta\\src\\DevIO.Business\\DevIO.Business.csproj",
+        "projectPath": "C:\\Users\\aleli\\Source\\Repos\\FornecedorAPI\\src\\DevIO.Business\\DevIO.Business.csproj",
         "packagesPath": "C:\\Users\\aleli\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aleli\\source\\repos\\APICompleta\\src\\DevIO.Business\\obj\\",
+        "outputPath": "C:\\Users\\aleli\\Source\\Repos\\FornecedorAPI\\src\\DevIO.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
