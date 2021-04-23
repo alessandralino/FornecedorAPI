@@ -78,7 +78,7 @@ namespace DevIO.Api.Configuration
                 return customResponse(loginUser);
             }
 
-            //notificarErro("Usuário ou Senha incorretos.");
+            notificarErro("Usuário ou Senha incorretos.");
             return customResponse(loginUser);
         }
 
