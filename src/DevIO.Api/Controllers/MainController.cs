@@ -3,9 +3,7 @@ using DevIO.Business.Notificacoes;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 
 namespace DevIO.Api.Controllers
 {
@@ -14,10 +12,22 @@ namespace DevIO.Api.Controllers
     public abstract class MainController : ControllerBase
     {
         private readonly INotificador _notificador;
+        public readonly IUser AppUser;
 
-        public MainController(INotificador notificador)
+        protected Guid UsuarioId { get; set; }
+        protected bool UsuarioAutenticado { get; set; }
+
+        public MainController(INotificador notificador, IUser appUser)
         {
-             _notificador = notificador;
+            _notificador = notificador;
+            AppUser = appUser;
+
+            if (AppUser.IsAuthenticated())
+            {
+                UsuarioId = AppUser.GetUserId();
+                UsuarioAutenticado = true;
+            }
+
         }
 
         protected bool operacaoValida() 
@@ -50,7 +60,6 @@ namespace DevIO.Api.Controllers
         {
             if (!modelState.IsValid) notificarErroModelInvalida(modelState);
             return customResponse();
-
         }
 
         protected void notificarErroModelInvalida(ModelStateDictionary modelState)
