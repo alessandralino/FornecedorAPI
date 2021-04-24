@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
@@ -87,26 +88,16 @@ namespace DevIO.Api.Configuration
             return customResponse(loginUser);
         }
 
-        private async Task<string> gerarJWT(string email)
+        private async Task<LoginResponseViewModel> gerarJWT(string email)
         {
+
             var user = await _userManager.FindByEmailAsync(email);
+
             var claims = await _userManager.GetClaimsAsync(user);
+
             var userRoles = await _userManager.GetRolesAsync(user);
 
-
-            claims.Add(new Claim(JwtRegisteredClaimNames.Sub, user.Id));
-            claims.Add(new Claim(JwtRegisteredClaimNames.Email, user.Email));
-            claims.Add(new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()));
-            claims.Add(new Claim(JwtRegisteredClaimNames.Nbf, ToUnixEpochDate(DateTime.UtcNow).ToString()));
-            claims.Add(new Claim(JwtRegisteredClaimNames.Iat, ToUnixEpochDate(DateTime.UtcNow).ToString(), ClaimValueTypes.Integer64));
-           
-            foreach (var userRole in userRoles)
-            {
-                claims.Add(new Claim("role", userRole));
-            }
-
-            var identityClaims = new ClaimsIdentity();
-            identityClaims.AddClaims(claims);
+            ClaimsIdentity identityClaims = ExtrairPermissoes(user, claims, userRoles);
 
             var tokenHandler = new JwtSecurityTokenHandler();
 
@@ -118,15 +109,50 @@ namespace DevIO.Api.Configuration
                 Audience = _appSettings.ValidoEm,
                 Subject = identityClaims,
                 Expires = DateTime.UtcNow.AddHours(_appSettings.ExpiracaoHoras),
-                SigningCredentials = new SigningCredentials (new SymmetricSecurityKey(key), 
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key),
                 SecurityAlgorithms.HmacSha256Signature)
             });
 
             var encodedToken = tokenHandler.WriteToken(token);
 
-            return encodedToken;
+            var response = obterDadosUsuarioAutenticado(user, claims, encodedToken);
 
+            return response;
         }
+
+        private LoginResponseViewModel obterDadosUsuarioAutenticado(IdentityUser user, IList<Claim> claims, string encodedToken)
+        {
+            return new LoginResponseViewModel
+            {
+                AccessToken = encodedToken,
+                ExpiresIn = TimeSpan.FromHours(_appSettings.ExpiracaoHoras).TotalSeconds,
+                UserToken = new UserTokenViewModel
+                {
+                    Id = user.Id,
+                    Email = user.Email,
+                    Claims = claims.Select(c => new ClaimViewModel { Type = c.Type, Value = c.Value })
+                }
+            };
+        }
+
+        private static ClaimsIdentity ExtrairPermissoes(IdentityUser user, IList<Claim> claims, IList<string> userRoles)
+        {
+            claims.Add(new Claim(JwtRegisteredClaimNames.Sub, user.Id));
+            claims.Add(new Claim(JwtRegisteredClaimNames.Email, user.Email));
+            claims.Add(new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()));
+            claims.Add(new Claim(JwtRegisteredClaimNames.Nbf, ToUnixEpochDate(DateTime.UtcNow).ToString()));
+            claims.Add(new Claim(JwtRegisteredClaimNames.Iat, ToUnixEpochDate(DateTime.UtcNow).ToString(), ClaimValueTypes.Integer64));
+
+            foreach (var userRole in userRoles)
+            {
+                claims.Add(new Claim("role", userRole));
+            }
+
+            var identityClaims = new ClaimsIdentity();
+            identityClaims.AddClaims(claims);
+            return identityClaims;
+        }
+
 
         private static long ToUnixEpochDate(DateTime date)
             => (long)Math.Round((date.ToUniversalTime() - new DateTimeOffset(1970, 1, 1, 0, 0, 0, TimeSpan.Zero)).TotalSeconds);
