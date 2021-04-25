@@ -16,14 +16,25 @@ namespace DevIO.Api.Configuration
                 options.SuppressModelStateInvalidFilter = true;
             });
 
-            //abertura de api para utilização por aplicação cliente
+            //abertura de api para utilização por aplicação de outro dominio que está em outra política via CORS
             services.AddCors(options =>
             {
                 options.AddPolicy("Development", builder =>
-                builder.AllowAnyOrigin()
+                builder
+                    .AllowAnyOrigin()
                     .AllowAnyMethod()
                     .AllowAnyHeader()
                     .AllowCredentials());
+            });
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("Production", builder =>
+                builder
+                    .WithMethods("GET", "POST")
+                    .WithOrigins("htpps://urlDoSistemaemProducao.com")
+                    .SetIsOriginAllowedToAllowWildcardSubdomains()
+                    .AllowAnyHeader());
             });
 
             return services;
@@ -33,6 +44,7 @@ namespace DevIO.Api.Configuration
         public static IApplicationBuilder UseMvcConfiguration(this IApplicationBuilder app)
         {
             app.UseHttpsRedirection();
+            /*Faz o redirecionamento para HTTPS indepente se a chamada foi HTTPS ou HTTP */
             app.UseMvc();
             return app;
         }

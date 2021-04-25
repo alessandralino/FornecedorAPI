@@ -39,11 +39,16 @@ namespace DevIO.Api
         {
             if (env.IsDevelopment())
             {
+                app.UseCors("Development");
                 app.UseDeveloperExceptionPage();
             }
             else
             {
-                app.UseHsts();
+                app.UseCors("Production");
+                app.UseHsts(); 
+                /* Uma vez que a aplicação foi utilizada atráves de um browser ela vai responder dizendo 'eu entendo https'
+                 * O Broser vai guardar o cache em https. No entanto o hsts só funciona se for feita uma cominicação HTTPS. 
+                 */
             }
 
             app.UseAuthentication();
