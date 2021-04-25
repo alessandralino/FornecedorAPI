@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vbOAp/66rHD92iX6G4jubsVAtbL6sVseu3D5taUF06+HrsyybG5biqDMERSrbtZsEqJPACeWclfvvBhIk2hFRw==",
+  "dgSpecHash": "gyin7cw6d+M5qBxWiwK0jRb0UHpO07faeB4SqZmuDFZ3VMpyKcUXyuRo67Wu20mP9oCpvE9Qr4FGabB96FzcIQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\aleli\\source\\repos\\FornecedorAPI\\src\\DevIO.Api\\DevIO.Api.csproj",
   "expectedPackageFiles": [
@@ -72,6 +72,8 @@
     "C:\\Users\\aleli\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.viewcompilation\\2.2.0\\microsoft.aspnetcore.mvc.razor.viewcompilation.2.2.0.nupkg.sha512",
     "C:\\Users\\aleli\\.nuget\\packages\\microsoft.aspnetcore.mvc.razorpages\\2.2.0\\microsoft.aspnetcore.mvc.razorpages.2.2.0.nupkg.sha512",
     "C:\\Users\\aleli\\.nuget\\packages\\microsoft.aspnetcore.mvc.taghelpers\\2.2.0\\microsoft.aspnetcore.mvc.taghelpers.2.2.0.nupkg.sha512",
+    "C:\\Users\\aleli\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\3.1.2\\microsoft.aspnetcore.mvc.versioning.3.1.2.nupkg.sha512",
+    "C:\\Users\\aleli\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning.apiexplorer\\3.2.0\\microsoft.aspnetcore.mvc.versioning.apiexplorer.3.2.0.nupkg.sha512",
     "C:\\Users\\aleli\\.nuget\\packages\\microsoft.aspnetcore.mvc.viewfeatures\\2.2.0\\microsoft.aspnetcore.mvc.viewfeatures.2.2.0.nupkg.sha512",
     "C:\\Users\\aleli\\.nuget\\packages\\microsoft.aspnetcore.nodeservices\\2.2.0\\microsoft.aspnetcore.nodeservices.2.2.0.nupkg.sha512",
     "C:\\Users\\aleli\\.nuget\\packages\\microsoft.aspnetcore.owin\\2.2.0\\microsoft.aspnetcore.owin.2.2.0.nupkg.sha512",

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.AspNetCore.Mvc.ApiExplorer;
 
 namespace DevIO.Api.Configuration
 {
@@ -10,13 +11,31 @@ namespace DevIO.Api.Configuration
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+            services.AddApiVersioning(options => 
+            {
+                options.AssumeDefaultVersionWhenUnspecified = true;
+
+                options.DefaultApiVersion = new ApiVersion(1, 0);
+
+                /*informa no header do response quais versão da api estão deprecadas e a mais atual*/ 
+                options.ReportApiVersions = true;
+            });
+
+            services.AddVersionedApiExplorer(options => 
+            {
+                options.GroupNameFormat = "'v'VVV";
+                options.SubstituteApiVersionInUrl = true; 
+            }
+            );
+
+
             services.Configure<ApiBehaviorOptions>(options =>
             {
-                //estou suprimindo pq quero persoanlizar os erros retornados ao Cliente
+                /*estou suprimindo pq quero persoanlizar os erros retornados ao Cliente*/
                 options.SuppressModelStateInvalidFilter = true;
             });
 
-            //abertura de api para utilização por aplicação de outro dominio que está em outra política via CORS
+            /*abertura de api para utilização por aplicação de outro dominio que está em outra política via CORS*/
             services.AddCors(options =>
             {
                 options.AddPolicy("Development", builder =>
@@ -40,11 +59,10 @@ namespace DevIO.Api.Configuration
             return services;
         }
 
-
         public static IApplicationBuilder UseMvcConfiguration(this IApplicationBuilder app)
         {
-            app.UseHttpsRedirection();
             /*Faz o redirecionamento para HTTPS indepente se a chamada foi HTTPS ou HTTP */
+            app.UseHttpsRedirection();
             app.UseMvc();
             return app;
         }

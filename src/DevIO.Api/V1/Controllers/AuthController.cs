@@ -11,15 +11,15 @@ using DevIO.Api.ViewModels;
 using DevIO.Business.Intefaces;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 
 
-namespace DevIO.Api.Configuration
+namespace DevIO.Api.V1.Controllers
 {
     
-    [Route("api")]
+    [ApiVersion("1.0")]
+    [Route("api/v{version:ApiVersion}/api")]
     public class AuthController : MainController
     {
         private readonly SignInManager<IdentityUser> _signInManager;

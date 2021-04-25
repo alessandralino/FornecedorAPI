@@ -1,19 +1,22 @@
 ﻿using AutoMapper;
+using DevIO.Api.Controllers;
 using DevIO.Api.ViewModels;
 using DevIO.Business.Intefaces;
 using DevIO.Business.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Threading.Tasks;
 
-namespace DevIO.Api.Controllers
+namespace DevIO.Api.V1.Controllers
 {
-    [Route("api/produtos")]
-    [ApiController]
+
+    [Authorize]
+    [ApiVersion("1.0")]
+    [Route("api/v{version:ApiVersion}/[controller]")]
     public class ProdutosController : MainController
     {
         private readonly IProdutoRepository _produtoRepository;
@@ -32,7 +35,7 @@ namespace DevIO.Api.Controllers
         }
 
 
-
+        
         [HttpGet]
         public async Task<IEnumerable<ProdutoViewModel>> ObterTodos()
         {
