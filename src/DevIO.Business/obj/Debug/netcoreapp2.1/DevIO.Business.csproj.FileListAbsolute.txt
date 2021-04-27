@@ -9,7 +9,6 @@ C:\Users\aleli\source\repos\APICompleta\src\DevIO.Business\obj\Debug\netcoreapp2
 C:\Users\aleli\source\repos\FornecedorAPI\src\DevIO.Business\bin\Debug\netcoreapp2.1\DevIO.Business.deps.json
 C:\Users\aleli\source\repos\FornecedorAPI\src\DevIO.Business\bin\Debug\netcoreapp2.1\DevIO.Business.dll
 C:\Users\aleli\source\repos\FornecedorAPI\src\DevIO.Business\bin\Debug\netcoreapp2.1\DevIO.Business.pdb
-C:\Users\aleli\source\repos\FornecedorAPI\src\DevIO.Business\obj\Debug\netcoreapp2.1\DevIO.Business.csprojAssemblyReference.cache
 C:\Users\aleli\source\repos\FornecedorAPI\src\DevIO.Business\obj\Debug\netcoreapp2.1\DevIO.Business.AssemblyInfoInputs.cache
 C:\Users\aleli\source\repos\FornecedorAPI\src\DevIO.Business\obj\Debug\netcoreapp2.1\DevIO.Business.AssemblyInfo.cs
 C:\Users\aleli\source\repos\FornecedorAPI\src\DevIO.Business\obj\Debug\netcoreapp2.1\DevIO.Business.csproj.CoreCompileInputs.cache
