@@ -54,6 +54,14 @@
               "target": "Package",
               "version": "[8.1.1, )"
             },
+            "Elmah.Io.AspNetCore": {
+              "target": "Package",
+              "version": "[3.6.63, )"
+            },
+            "Elmah.Io.Extensions.Logging": {
+              "target": "Package",
+              "version": "[3.4.38, )"
+            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",

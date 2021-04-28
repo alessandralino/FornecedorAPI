@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
+using DevIO.Api.Extensions;
 
 namespace DevIO.Api
 {
@@ -34,6 +35,8 @@ namespace DevIO.Api
 
             services.AddSwaggerConfig();
 
+            services.AddLoggingConfiguration(Configuration);
+
             services.ResolveDependencies();
         }
 
@@ -52,9 +55,10 @@ namespace DevIO.Api
             }
 
             app.UseAuthentication();
+            app.UseMiddleware<ExceptionMiddleware>();
             app.UseMvcConfiguration();
             app.UseSwaggerConfig(provider);
-
+            app.UseLoggingConfiguration();
         }
     }
 }

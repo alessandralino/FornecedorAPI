@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "fFJLDcwxgGRUeiIYVyjQuEKZploJv76KFNO8CgNk34OpKT/E01m9cb/xeptT+9H6ql2cosKaVnFJjqMvVVnCyw==",
+  "dgSpecHash": "1fBfZm/YxSBx4l7MD6x73TMseCfyaZt/Nj618GsMVh4MlTZS5YiGO43kUZkCEs7RkBhP2+ZOQTtnLaxECmDs3Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\aleli\\source\\repos\\FornecedorAPI\\src\\DevIO.Api\\DevIO.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aleli\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\aleli\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
+    "C:\\Users\\aleli\\.nuget\\packages\\elmah.io.aspnetcore\\3.6.63\\elmah.io.aspnetcore.3.6.63.nupkg.sha512",
+    "C:\\Users\\aleli\\.nuget\\packages\\elmah.io.client\\3.3.58\\elmah.io.client.3.3.58.nupkg.sha512",
+    "C:\\Users\\aleli\\.nuget\\packages\\elmah.io.extensions.logging\\3.4.38\\elmah.io.extensions.logging.3.4.38.nupkg.sha512",
     "C:\\Users\\aleli\\.nuget\\packages\\fluentvalidation\\8.3.0\\fluentvalidation.8.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnet.webapi.client\\5.2.6\\microsoft.aspnet.webapi.client.5.2.6.nupkg.sha512",
     "C:\\Users\\aleli\\.nuget\\packages\\microsoft.aspnetcore\\2.2.0\\microsoft.aspnetcore.2.2.0.nupkg.sha512",
@@ -180,6 +183,7 @@
     "C:\\Users\\aleli\\.nuget\\packages\\microsoft.netcore.dotnethostresolver\\2.2.0\\microsoft.netcore.dotnethostresolver.2.2.0.nupkg.sha512",
     "C:\\Users\\aleli\\.nuget\\packages\\microsoft.netcore.platforms\\2.2.0\\microsoft.netcore.platforms.2.2.0.nupkg.sha512",
     "C:\\Users\\aleli\\.nuget\\packages\\microsoft.netcore.targets\\2.0.0\\microsoft.netcore.targets.2.0.0.nupkg.sha512",
+    "C:\\Users\\aleli\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.18\\microsoft.rest.clientruntime.2.3.18.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",

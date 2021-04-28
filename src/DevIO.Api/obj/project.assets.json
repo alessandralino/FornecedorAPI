@@ -29,6 +29,46 @@
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
+      "Elmah.Io.AspNetCore/3.6.63": {
+        "type": "package",
+        "dependencies": {
+          "Elmah.Io.Client": "[3.3.58, 4.0.0)",
+          "Microsoft.AspNetCore.Http": "1.1.1",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.1/Elmah.Io.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Elmah.Io.AspNetCore.dll": {}
+        }
+      },
+      "Elmah.Io.Client/3.3.58": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.4/Elmah.Io.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/Elmah.Io.Client.dll": {}
+        }
+      },
+      "Elmah.Io.Extensions.Logging/3.4.38": {
+        "type": "package",
+        "dependencies": {
+          "Elmah.Io.Client": "[3.2.54, 4.0.0)",
+          "Microsoft.Extensions.Logging": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Elmah.Io.Extensions.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Elmah.Io.Extensions.Logging.dll": {}
+        }
+      },
       "FluentValidation/8.3.0": {
         "type": "package",
         "dependencies": {
@@ -2760,6 +2800,19 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "Microsoft.Rest.ClientRuntime/2.3.18": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.dll": {}
+        }
+      },
       "Microsoft.Win32.Registry/4.5.0": {
         "type": "package",
         "dependencies": {
@@ -4622,6 +4675,45 @@
         "automapper.extensions.microsoft.dependencyinjection.nuspec",
         "icon.png",
         "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
+      ]
+    },
+    "Elmah.Io.AspNetCore/3.6.63": {
+      "sha512": "rSMgZpyO4CT//OSVG/RVe9/mkBeNmksQ3bP13Beeg/IrPSlbrNy84KrVdMCLFqFjd2coQ9gf2dfwlOqhTcZyQQ==",
+      "type": "package",
+      "path": "elmah.io.aspnetcore/3.6.63",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "elmah.io.aspnetcore.3.6.63.nupkg.sha512",
+        "elmah.io.aspnetcore.nuspec",
+        "lib/netstandard1.1/Elmah.Io.AspNetCore.dll"
+      ]
+    },
+    "Elmah.Io.Client/3.3.58": {
+      "sha512": "MD/pPjGflU0UEYgxbkUi2E3eMoNgfuqpElMTLRa/azQL4Ksp1QR+hIx/zMT2nz3aT8apOIGpebfI1qe8YzpHhQ==",
+      "type": "package",
+      "path": "elmah.io.client/3.3.58",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "elmah.io.client.3.3.58.nupkg.sha512",
+        "elmah.io.client.nuspec",
+        "lib/net45/Elmah.Io.Client.dll",
+        "lib/netstandard1.1/Elmah.Io.Client.dll",
+        "lib/netstandard1.4/Elmah.Io.Client.dll"
+      ]
+    },
+    "Elmah.Io.Extensions.Logging/3.4.38": {
+      "sha512": "9b9g2bTxUuTX2HY4gFvD4Lkpee0syQ8WNi4K5ckAXPO/djw2mLcWBeSwyCkJDod5GR1njMKp5g+fMRd327zB+w==",
+      "type": "package",
+      "path": "elmah.io.extensions.logging/3.4.38",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "elmah.io.extensions.logging.3.4.38.nupkg.sha512",
+        "elmah.io.extensions.logging.nuspec",
+        "lib/netstandard1.1/Elmah.Io.Extensions.Logging.dll",
+        "lib/netstandard2.0/Elmah.Io.Extensions.Logging.dll"
       ]
     },
     "FluentValidation/8.3.0": {
@@ -7438,6 +7530,23 @@
         "runtime.json",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Microsoft.Rest.ClientRuntime/2.3.18": {
+      "sha512": "daE2vz5eNmiUbx8Lm0DArlKfKVtH3IzSteR0N+AJJ7cDgj32LcFudGx9Vm0bFelmiEZ3nO4Y7XTk2nfjUK/uCg==",
+      "type": "package",
+      "path": "microsoft.rest.clientruntime/2.3.18",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Microsoft.Rest.ClientRuntime.dll",
+        "lib/net452/Microsoft.Rest.ClientRuntime.runtimeconfig.json",
+        "lib/net452/Microsoft.Rest.ClientRuntime.xml",
+        "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.dll",
+        "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.runtimeconfig.json",
+        "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.xml",
+        "microsoft.rest.clientruntime.2.3.18.nupkg.sha512",
+        "microsoft.rest.clientruntime.nuspec"
       ]
     },
     "Microsoft.Win32.Registry/4.5.0": {
@@ -12420,6 +12529,8 @@
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 8.1.1",
       "DevIO.Business >= 1.0.0",
       "DevIO.Data >= 1.0.0",
+      "Elmah.Io.AspNetCore >= 3.6.63",
+      "Elmah.Io.Extensions.Logging >= 3.4.38",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Mvc.ApiExplorer >= 2.2.0",
       "Microsoft.AspNetCore.Mvc.Versioning >= 3.1.2",
@@ -12486,6 +12597,14 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": {
             "target": "Package",
             "version": "[8.1.1, )"
+          },
+          "Elmah.Io.AspNetCore": {
+            "target": "Package",
+            "version": "[3.6.63, )"
+          },
+          "Elmah.Io.Extensions.Logging": {
+            "target": "Package",
+            "version": "[3.4.38, )"
           },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",

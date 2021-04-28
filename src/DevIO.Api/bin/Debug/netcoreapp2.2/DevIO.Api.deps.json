@@ -27,6 +27,8 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.1.1",
           "DevIO.Business": "1.0.0",
           "DevIO.Data": "1.0.0",
+          "Elmah.Io.AspNetCore": "3.6.63",
+          "Elmah.Io.Extensions.Logging": "3.4.38",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Mvc.ApiExplorer": "2.2.0",
           "Microsoft.AspNetCore.Mvc.Versioning": "3.1.2",
@@ -75,6 +77,52 @@
         },
         "compile": {
           "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        }
+      },
+      "Elmah.Io.AspNetCore/3.6.63": {
+        "dependencies": {
+          "Elmah.Io.Client": "3.3.58",
+          "Microsoft.AspNetCore.Http": "2.2.0",
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.1/Elmah.Io.AspNetCore.dll": {
+            "assemblyVersion": "3.6.63.0",
+            "fileVersion": "3.6.63.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.1/Elmah.Io.AspNetCore.dll": {}
+        }
+      },
+      "Elmah.Io.Client/3.3.58": {
+        "dependencies": {
+          "Microsoft.Rest.ClientRuntime": "2.3.18",
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Elmah.Io.Client.dll": {
+            "assemblyVersion": "3.3.58.0",
+            "fileVersion": "3.3.58.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Elmah.Io.Client.dll": {}
+        }
+      },
+      "Elmah.Io.Extensions.Logging/3.4.38": {
+        "dependencies": {
+          "Elmah.Io.Client": "3.3.58",
+          "Microsoft.Extensions.Logging": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Elmah.Io.Extensions.Logging.dll": {
+            "assemblyVersion": "3.4.38.0",
+            "fileVersion": "3.4.38.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Elmah.Io.Extensions.Logging.dll": {}
         }
       },
       "FluentValidation/8.3.0": {
@@ -251,6 +299,21 @@
         },
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll": {}
+        }
+      },
+      "Microsoft.Rest.ClientRuntime/2.3.18": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.3.18.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.4/Microsoft.Rest.ClientRuntime.dll": {}
         }
       },
       "Remotion.Linq/2.2.0": {
@@ -3473,6 +3536,27 @@
       "path": "automapper.extensions.microsoft.dependencyinjection/8.1.1",
       "hashPath": "automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512"
     },
+    "Elmah.Io.AspNetCore/3.6.63": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rSMgZpyO4CT//OSVG/RVe9/mkBeNmksQ3bP13Beeg/IrPSlbrNy84KrVdMCLFqFjd2coQ9gf2dfwlOqhTcZyQQ==",
+      "path": "elmah.io.aspnetcore/3.6.63",
+      "hashPath": "elmah.io.aspnetcore.3.6.63.nupkg.sha512"
+    },
+    "Elmah.Io.Client/3.3.58": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MD/pPjGflU0UEYgxbkUi2E3eMoNgfuqpElMTLRa/azQL4Ksp1QR+hIx/zMT2nz3aT8apOIGpebfI1qe8YzpHhQ==",
+      "path": "elmah.io.client/3.3.58",
+      "hashPath": "elmah.io.client.3.3.58.nupkg.sha512"
+    },
+    "Elmah.Io.Extensions.Logging/3.4.38": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9b9g2bTxUuTX2HY4gFvD4Lkpee0syQ8WNi4K5ckAXPO/djw2mLcWBeSwyCkJDod5GR1njMKp5g+fMRd327zB+w==",
+      "path": "elmah.io.extensions.logging/3.4.38",
+      "hashPath": "elmah.io.extensions.logging.3.4.38.nupkg.sha512"
+    },
     "FluentValidation/8.3.0": {
       "type": "package",
       "serviceable": true,
@@ -3570,6 +3654,13 @@
       "sha512": "sha512-6gwewTbmOh+ZVBicVkL1XRp79sx4O7BVY6Yy+7OYZdwn3pyOKe9lOam+3gXJ3TZMjhJZdV0Ub8hxHt2vkrmN5Q==",
       "path": "microsoft.extensions.primitives/3.0.0",
       "hashPath": "microsoft.extensions.primitives.3.0.0.nupkg.sha512"
+    },
+    "Microsoft.Rest.ClientRuntime/2.3.18": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-daE2vz5eNmiUbx8Lm0DArlKfKVtH3IzSteR0N+AJJ7cDgj32LcFudGx9Vm0bFelmiEZ3nO4Y7XTk2nfjUK/uCg==",
+      "path": "microsoft.rest.clientruntime/2.3.18",
+      "hashPath": "microsoft.rest.clientruntime.2.3.18.nupkg.sha512"
     },
     "Remotion.Linq/2.2.0": {
       "type": "package",
