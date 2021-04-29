@@ -33,6 +33,7 @@ namespace DevIO.Api.V2.Controllers
             _logger.LogError("Log de Erro");
             _logger.LogCritical("Log de Problema Critico");
 
+            
             return "Sou a V2";
         }
     }

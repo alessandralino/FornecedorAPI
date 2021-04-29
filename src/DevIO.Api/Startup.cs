@@ -59,6 +59,7 @@ namespace DevIO.Api
             app.UseMvcConfiguration();
             app.UseSwaggerConfig(provider);
             app.UseLoggingConfiguration();
+            
         }
     }
 }
