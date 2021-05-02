@@ -19,13 +19,13 @@ Atualmente as funciolidades envolvem operações de:
 
 ## Começando
 
-Para executar a aplicação, será necessário:
+Para executar a aplicação, será necessário instalar:
 
-- [instalar o _.NET Core 2.2_](https://dotnet.microsoft.com/download/dotnet/2.2)
-- [instalar o _Visual Studio 2019_](https://visualstudio.microsoft.com/pt-br/downloads/)
-- [logar com _Elmah_](https://elmah.io/features/asp-net-core/)
-- [realizar Healthy Checks com _Xabaril_](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks)
-- [injetar Dependências com _AutoMapper_](https://github.com/AutoMapper/AutoMapper.Extensions.Microsoft.DependencyInjection)
+- [.NET Core 2.2_](https://dotnet.microsoft.com/download/dotnet/2.2)
+- [_Visual Studio 2019_](https://visualstudio.microsoft.com/pt-br/downloads/)
+- [_Elmah_](https://elmah.io/features/asp-net-core/)
+- [Healthy Checks com _Xabaril_](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks)
+- [_AutoMapper_](https://github.com/AutoMapper/AutoMapper.Extensions.Microsoft.DependencyInjection)
 
 ## Desenvolvimento
 
