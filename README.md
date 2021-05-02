@@ -7,12 +7,12 @@ Esta aplicação devolve dados de Fornecedor para sistemas de controle de Produt
 
 ## Features
 
-O projeto pode ser usado como modelo para construção de WebAPI REST com ASP.NET Core de modo forma prática.
+O projeto pode ser usado como modelo para construção de WebAPI REST com ASP.NET Core de forma prática.
 Atualmente as funciolidades envolvem operações de: 
 
 - Autenticação e permissão de acesso de usuário via JWT (Jason Web Token); 
 - CRUD de Fornecedor e Produtos;
-- Upload de Imagem (com a opção de utilizar imagens relativamente grandes). *
+- Upload de Imagem (com a opção de utilizar imagens relativamente grandes). 
 
  Na versão atual suprimi o bloqueio à aplicação, deixando o acesso ao Swagger público via Cloud.
  Você pode acessar a versão atual e as anteriores [aqui](https://devioapi.azurewebsites.net/swagger/index.html).
@@ -60,7 +60,7 @@ O arquivo appsettings.Development e Staging configuram publicação nesses respe
 Para não expor dados desse ambiente neste repositório foi utilizado o _Management User Secrets_. 
 
 
-### Teste via Swagger
+## Teste via Swagger
 
 - Utilize o endpoint "/api/v1/nova-conta" para registrar um usuário; 
 - Insira o usuário e senha no body do endpoint "/api/v1/entrar";
