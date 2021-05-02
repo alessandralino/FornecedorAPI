@@ -22,6 +22,10 @@ C:\Users\aleli\source\repos\APICompleta\src\DevIO.Api\obj\Debug\netcoreapp2.2\De
 C:\Users\aleli\source\repos\APICompleta\src\DevIO.Api\obj\Debug\netcoreapp2.2\DevIO.Api.genruntimeconfig.cache
 C:\Users\aleli\source\repos\FornecedorAPI\src\DevIO.Api\bin\Debug\netcoreapp2.2\appsettings.Development.json
 C:\Users\aleli\source\repos\FornecedorAPI\src\DevIO.Api\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\aleli\source\repos\FornecedorAPI\src\DevIO.Api\bin\Debug\netcoreapp2.2\appsettings.production.Development.json
+C:\Users\aleli\source\repos\FornecedorAPI\src\DevIO.Api\bin\Debug\netcoreapp2.2\appsettings.Production.json
+C:\Users\aleli\source\repos\FornecedorAPI\src\DevIO.Api\bin\Debug\netcoreapp2.2\appsettings.Staging.Development.json
+C:\Users\aleli\source\repos\FornecedorAPI\src\DevIO.Api\bin\Debug\netcoreapp2.2\appsettings.Staging.json
 C:\Users\aleli\source\repos\FornecedorAPI\src\DevIO.Api\bin\Debug\netcoreapp2.2\DevIO.Api.deps.json
 C:\Users\aleli\source\repos\FornecedorAPI\src\DevIO.Api\bin\Debug\netcoreapp2.2\DevIO.Api.runtimeconfig.json
 C:\Users\aleli\source\repos\FornecedorAPI\src\DevIO.Api\bin\Debug\netcoreapp2.2\DevIO.Api.runtimeconfig.dev.json
