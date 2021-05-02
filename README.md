@@ -10,7 +10,7 @@ Esta aplicação devolve dados de Fornecedor para sistemas de controle de Produt
 O projeto pode ser usado como modelo para construção de WebAPI REST com ASP.NET Core de modo forma prática.
 Atualmente as funciolidades envolvem operações de: 
 
-- Autenticação de usuário via JWT (Jason Web Token); 
+- Autenticação e permissão de acesso de usuário via JWT (Jason Web Token); 
 - CRUD de Fornecedor e Produtos;
 - Upload de Imagem (com a opção de utilizar imagens relativamente grandes). *
 
@@ -36,7 +36,7 @@ cd "diretorio de sua preferencia"
 git clone https://github.com/AlessandraLino/FornecedorAPI.git
 ```
 
-### Build
+## Build
 
 Para construir o projeto utilizar [Comandos de CLI](https://docs.microsoft.com/pt-br/dotnet/core/tools/)
 
@@ -54,15 +54,23 @@ dotnet build -h|--help
 O comando dotnet build compila o projeto e suas dependências em um conjunto de binários. Os binários incluem o código do projeto em arquivos de IL (linguagem intermediária) com uma extensão . dll . 
 Dependendo do tipo de projeto e das configurações, outros arquivos podem ser incluídos.
 
-### Deploy e Publicação
+## Deploy e Publicação
 
 O arquivo appsettings.Development e Staging configuram publicação nesses respectivos ambientes. Já em Produção os dados foram configurados na plataforma Azure. 
 Para não expor dados desse ambiente neste repositório foi utilizado o _Management User Secrets_. 
 
 
+### Teste via Swagger
 
+- Utilize o endpoint "/api/v1/nova-conta" para registrar um usuário; 
+- Insira o usuário e senha no body do endpoint "/api/v1/entrar";
+- Obtenha o conteúdo de "accessToken" da resposta;
+- Insira-o em Autorize (canto superior direito). 
 
+Verifique também o token obtido em [jwt.io](https://jwt.io/)
 
+_Métodos que não requerem permissão via Claims na versão 1.0:_
+- [Listar Fornecedores](/api/v1/Fornecedores)
 
 
 
