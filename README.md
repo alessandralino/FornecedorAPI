@@ -3,7 +3,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://devioapi.azurewebsites.net/swagger/index.html)
 
-Esta aplicação devolve dados de Fornecedor para sistemas de controle de Produto. 
+Esta aplicação gerencia dados de Fornecedor e Produto para sistemas de controle de logística. 
 
 ## Features
 
@@ -38,7 +38,7 @@ git clone https://github.com/AlessandraLino/FornecedorAPI.git
 
 ## Build
 
-Para construir o projeto utilizar [Comandos de CLI](https://docs.microsoft.com/pt-br/dotnet/core/tools/)
+Para construir o projeto utilize o comando abaixo: 
 
 ```shell
 dotnet build [<PROJECT>|<SOLUTION>] [-c|--configuration <CONFIGURATION>]
@@ -51,8 +51,10 @@ dotnet build -h|--help
 
 ```
 
+
 O comando dotnet build compila o projeto e suas dependências em um conjunto de binários. Os binários incluem o código do projeto em arquivos de IL (linguagem intermediária) com uma extensão . dll . 
 Dependendo do tipo de projeto e das configurações, outros arquivos podem ser incluídos.
+(Veja mais em [Comandos de CLI](https://docs.microsoft.com/pt-br/dotnet/core/tools/))
 
 ## Deploy e Publicação
 
