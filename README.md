@@ -10,7 +10,7 @@ Esta aplicação devolve dados de Fornecedor para sistemas de controle de Produt
 O projeto pode ser usado como modelo para construção de WebAPI REST com ASP.NET Core de forma prática.
 Atualmente as funciolidades envolvem operações de: 
 
-- Autenticação e permissão de acesso de usuário via JWT (Jason Web Token); 
+- Autenticação e permissão de acesso de usuário via JWT (JSON Web Token); 
 - CRUD de Fornecedor e Produtos;
 - Upload de Imagem (com a opção de utilizar imagens relativamente grandes). 
 
@@ -21,7 +21,7 @@ Atualmente as funciolidades envolvem operações de:
 
 Para executar a aplicação, será necessário instalar:
 
-- [.NET Core 2.2_](https://dotnet.microsoft.com/download/dotnet/2.2)
+- [.NET Core 2.2](https://dotnet.microsoft.com/download/dotnet/2.2)
 - [_Visual Studio 2019_](https://visualstudio.microsoft.com/pt-br/downloads/)
 - [_Elmah_](https://elmah.io/features/asp-net-core/)
 - [Healthy Checks com _Xabaril_](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks)
