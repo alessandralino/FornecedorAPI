@@ -44,6 +44,7 @@ namespace DevIO.Api.V1.Controllers
             return fornecedor;
         }
 
+        [AllowAnonymous]
         [HttpGet ("{id:guid}")]
         public async Task<ActionResult<FornecedorViewModel>> ObterPorID(Guid id)
         {
@@ -54,6 +55,7 @@ namespace DevIO.Api.V1.Controllers
             return fornecedor;
         }
 
+        [AllowAnonymous]
         [HttpGet("obter-endereco/{id:guid}")]
         public async Task<EnderecoViewModel> ObterEnderecoPorID(Guid id)
         {
@@ -61,6 +63,7 @@ namespace DevIO.Api.V1.Controllers
 
         }
 
+        [AllowAnonymous]
         [ClaimsAuthorize("Fornecedor", "Atualizar")]
         [HttpPut("atualizar-endereco/{id:guid}")]
         /* A partir do ASP NET 2.1 não é necessário informar se o id vem da rota. */
@@ -79,6 +82,7 @@ namespace DevIO.Api.V1.Controllers
             return customResponse(enderecoViewModel);
         }
 
+        
         [ClaimsAuthorize("Fornecedor","Adicionar")]
         [HttpPost]
         public async Task<ActionResult<FornecedorViewModel>> Adicionar(FornecedorViewModel fornecedorViewModel) 
